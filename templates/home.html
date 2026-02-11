@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            color: #2E8B57;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .info {
+            text-align: left;
+            font-size: 1.1em;
+            margin-left: 20px;
+            color: #444;
+        }
+
+        .login-link {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .login-link:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the WebGIS Project!</h1>
+    <p>This project has been created by Ms. Saedi and Mr. Rashedi.</p>
+    <p>The course instructor is Dr. Al-Sheikh, and the TA for this course is Mr. Mehdi Nazari.</p>
+    
+    <div class="container">
+        <div class="info">
+            <h3>About the Project:</h3>
+            <p>This is a WebGIS project that uses Flask for backend and Leaflet for displaying maps. It integrates GeoServer for WMS layers and GetFeatureInfo functionality.</p>
+        </div>
+        <a href="{{ url_for('login') }}" class="login-link">Login</a>
+    </div>
+</body>
+</html>
